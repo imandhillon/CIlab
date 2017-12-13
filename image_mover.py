@@ -5,7 +5,7 @@ from skimage import imsave, imread
 import math
 from PIL import Image
 
-little_picture = np.array([[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,1,1,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]])
+picture = np.array([[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,1,1,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]])
 
 def mat_mover(img, trans=(0,0), rot=(0,0)):
     ''' img: an ndarray
@@ -66,5 +66,5 @@ def show_mat(img, height_shown=3, width_shown=4, x=1, y=5):
     
 
 if __name__ == '__main__':
-    show_mat(little_picture)
-    mat_mover(little_picture, trans=(1,1))
+    show_mat(picture)
+    mat_mover(picture, trans=(1,1))
